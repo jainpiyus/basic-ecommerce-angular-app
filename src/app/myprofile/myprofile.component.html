@@ -1,0 +1,113 @@
+<div class="profile-container">
+    <div class="sidebar">
+        <div class="profile">
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/profile-pic-male_2fd3e8.svg">
+
+                    </td>
+                    <td style="padding-left: 15px;">
+                        <span>Hello,</span>
+                        <h3 style="margin: 0">Piyush Jain</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="settings">
+            <div class="list">
+
+                <div class="left-icon contain">
+                    <mat-icon>next_week</mat-icon>
+                </div>
+                <div class="title contain">
+                    MY ORDERS
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon>chevron_right</mat-icon>
+                </div>
+            </div>
+            <div class="list">
+
+                <div class="left-icon contain">
+                    <mat-icon>person</mat-icon>
+                </div>
+                <div class="title contain">
+                    ACCOUNT SETTINGS
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon>chevron_right</mat-icon>
+                </div>
+                <div class="child-list">
+                    <ul>
+                        <a [routerLink]="['profile']" routerLinkActive="active">
+                            <li>Personal Information</li>
+                        </a>
+                        <a [routerLink]="['address']" routerLinkActive="active">
+                            <li>Manage Address</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="list">
+
+                <div class="left-icon contain">
+                    <mat-icon>add_comment</mat-icon>
+                </div>
+                <div class="title contain">
+                    PAYMENTS
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon>chevron_right</mat-icon>
+                </div>
+                <div class="child-list">
+                    <ul>
+                        <a [routerLink]="['carddetails']" routerLinkActive="active">
+                            <li>Saved Cards</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="list">
+                <div class="left-icon contain">
+                    <mat-icon>message</mat-icon>
+                </div>
+                <div class="title contain">
+                    MY STUFF
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon>chevron_right</mat-icon>
+                </div>
+                <div class="child-list">
+                    <ul>
+                        <a [routerLink]="['rewards']" routerLinkActive="active">
+                            <li>Rewards</li>
+                        </a>
+                        <a [routerLink]="['reviews']" routerLinkActive="active">
+                            <li>Reviews</li>
+                        </a>
+                        <a [routerLink]="['wishlist']" routerLinkActive="active">
+                            <li>My Wishlist</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="list">
+                <div class="left-icon contain">
+                    <mat-icon>power_settings_new</mat-icon>
+                </div>
+                <div class="title contain">
+                    LOGOUT
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon>chevron_right</mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>

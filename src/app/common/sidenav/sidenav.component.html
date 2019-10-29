@@ -1,0 +1,83 @@
+<table *ngIf="user">
+        <tr (click)="goToMyProfile()">
+                <td>
+                        <img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/profile-pic-male_2fd3e8.svg" />
+
+                </td>
+                <td style="padding-left: 15px;">
+                        <span>Hello,</span>
+                        <h3 style="margin: 0">Piyush Jain</h3>
+                </td>
+                <td>
+                        <mat-icon>chevron_right</mat-icon>
+                </td>
+        </tr>
+</table>
+<div class="login" *ngIf="!user">
+        <button mat-stroked-button color="primary" class="button" (click)="openLoginDialog()">LOGIN</button>
+</div>
+
+<ul class="list">
+        <li class="contain" (click)="toggelSidenav()" [routerLink]="['/home']" routerLinkActive="active">
+                <table>
+                        <tr>
+                                <td>
+                                        <mat-icon>home</mat-icon>
+                                </td>
+                                <td style="vertical-align: baseline;"><span style="margin-left: 10px;">HOME</span></td>
+                        </tr>
+                </table>
+        </li>
+        <li class="contain" (click)="toggelSidenav()" [routerLink]="['/products']" routerLinkActive="active">
+                <table>
+                        <tr>
+                                <td>
+                                        <mat-icon>add_to_photos</mat-icon>
+                                </td>
+                                <td style="vertical-align: baseline;"> <span style="margin-left: 10px;">PRODUCTS</span>
+                                </td>
+                        </tr>
+                </table>
+        </li>
+</ul>
+<ul class="list" *ngIf="user">
+        <li *ngFor="let item of profileMenu" [routerLink]="[item.link]" routerLinkActive="active"
+                (click)="toggelSidenav()">
+                <table>
+                        <tr>
+                                <td>
+                                        <mat-icon>{{item.icon}}</mat-icon>
+                                </td>
+                                <td style="vertical-align: baseline;">
+                                        <span style="margin-left: 10px;">{{item.title}}</span>
+                                </td>
+                        </tr>
+                </table>
+        </li>
+</ul>
+<ul class="list" *ngIf="user">
+        <li *ngFor="let item of myStuff" [routerLink]="[item.link]" routerLinkActive="active" (click)="toggelSidenav()">
+                <table>
+                        <tr>
+                                <td>
+                                        <mat-icon>{{item.icon}}</mat-icon>
+                                </td>
+                                <td style="vertical-align: baseline;">
+                                        <span style="margin-left: 10px;">{{item.title}}</span>
+                                </td>
+                        </tr>
+                </table>
+        </li>
+</ul>
+<div *ngIf="user">
+        <table>
+                <tr (click)="logout()">
+                        <td>
+                                <mat-icon>power_settings_new</mat-icon>
+                        </td>
+                        <td style="vertical-align: baseline;">
+                                <span style="margin-left: 10px;">Logout</span>
+                        </td>
+                </tr>
+        </table>
+</div>

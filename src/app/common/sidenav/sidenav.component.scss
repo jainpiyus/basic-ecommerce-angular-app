@@ -1,0 +1,24 @@
+.list{
+    list-style: none;
+   width: 100%;
+   padding: 0;
+   border-bottom: 1px solid lightcyan;
+}
+.list .contain:hover {
+    color: #3f51b5;
+}
+
+.list li{
+    padding: 10px 0px;
+    color: black;
+    cursor: pointer;
+}
+.list .contain:focus {
+    outline: none;
+}
+
+
+.list .active {
+    color: #3f51b5;
+    outline: none;
+}

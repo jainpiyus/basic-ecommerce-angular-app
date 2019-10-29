@@ -1,0 +1,101 @@
+.profile-container{
+    background: #f8f9fa !important;
+    min-height: 800px; 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    color: black;
+}
+
+.profile-container .sidebar{
+    min-height: 400px;
+    flex: 2;
+    margin-right: 20px;
+
+}
+.profile-container .sidebar .profile{
+    min-height: 50px;
+    background: #fff;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+}
+.profile-container .sidebar .settings{
+    margin-top: 20px;
+    min-height: 650px;
+    background: #fff;
+}
+
+.profile-container .main{
+    min-height: 400px;
+    background: #fff;
+    flex: 4;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.lastName {
+    margin-left: 5px;
+}
+
+.settings{
+    position: relative;
+}
+
+.settings .list{
+    padding: 0px 5%;
+    display: flex;
+    min-height: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.left-icon{
+    flex: 1;
+}
+.title {
+    flex: 3;
+}
+.right-icon{
+    flex: 1;
+}
+.settings .list .contain {
+    margin-top: 6%;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+.settings .list .contain:hover {
+    color: #3f51b5;
+}
+
+.settings .list .child-list {
+    flex: 0 0 100%;
+}
+
+.settings .list .child-list ul{
+
+    list-style: none;
+    padding: 0;
+}
+.settings .list .child-list li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    
+}
+.settings .list .child-list li:hover{
+    color: #3f51b5;
+    background: #f5faff;
+}
+.active{
+    background: #f5faff;
+}
+
+@media (max-width: 1080px) {
+    .sidebar{
+        display: none;
+    }
+}

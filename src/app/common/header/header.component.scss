@@ -1,0 +1,158 @@
+.contact-box{
+    background: #262626;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 2%;
+}
+.contact-box .first{
+    flex: 1;
+    align-items: center;
+}
+.contact-box .second{
+    flex: 2;
+}
+.contact-box .third{
+    flex: 2;
+}
+.header-box{
+    background-color: white;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 2%;
+}
+.menu{
+    display: flex;
+}
+.list{
+    list-style: none; 
+}
+.list .contain:hover {
+    color: #3f51b5;
+}
+.list li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 20px; 
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+}
+.list .contain:focus {
+    outline: none;
+}
+
+.list .active {
+    color: #3f51b5;
+    outline: none;
+}
+// .login-box{
+//     list-style: none;
+   
+// }
+// .login-box .contain:hover {
+//     color: #3f51b5;
+// }
+// .login-box li{
+//     display: inline-block;
+//     cursor: pointer;
+//     margin: 0px 20px; 
+//     transition: all 0.3s ease 0s;
+//     vertical-align: middle;
+// }
+// .login-box .contain:focus {
+//     outline: none;
+// }
+
+// .login-box .active {
+//     color: #3f51b5;
+//     outline: none;
+// }
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mobile-view {
+    display: none;
+}
+.sidenavEnable{
+    display: none;
+}
+.profile-menu{
+    display: none;
+}
+.dropdown {
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 3px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .dropdown-content a:hover{
+      background-color: #3f51b5;
+      color: white;
+  }
+
+  
+
+  @media (max-width: 1080px) {
+    .contact-box {
+          display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .mobile-view{
+        display: block !important;
+        font-size: 30px;
+    }
+    .sidenavEnable{
+        display: inline !important;
+        transform: translateY(-50%) scaleY(0);
+    }
+    .container{
+        padding: 10px 5%;
+    }
+}
+
+
+.example-container {
+  width: 400px;
+  height: 100%;
+  margin: 12px;
+  border: 1px solid #555;
+  z-index: 2;
+}
+
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

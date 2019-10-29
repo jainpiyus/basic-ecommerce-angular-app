@@ -1,0 +1,41 @@
+<div class="container">
+    <h3>Manage Addresses</h3>
+    <!-- <div class="box">
+        <mat-icon style="vertical-align: middle;">add</mat-icon> &nbsp; &nbsp;
+        <span style="font-size: 14px; color: #3f51b5;">Add A New Address</span>
+    </div> -->
+    <div class="address-form">
+        <form [formGroup]="addressForm">
+
+            <div class="form-box">
+                <mat-form-field appearance="outline">
+                    <mat-label>First name</mat-label>
+                    <input matInput formControlName="firstName" placeholder="Enter your first name">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Last name</mat-label>
+                    <input matInput formControlName="lastName" placeholder="Enter your last name">
+                </mat-form-field>
+            </div>
+            <div class="form-box">
+                <mat-form-field appearance="outline">
+                    <mat-label>Pincode</mat-label>
+                    <input matInput formControlName="pincode" placeholder="Enter your pincode">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Locality</mat-label>
+                    <input matInput formControlName="locality" placeholder="Enter locality">
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="outline" style="width: 100%">
+                <mat-label>Address</mat-label>
+                <textarea matInput formControlName="address" placeholder="Enter full address"></textarea>
+            </mat-form-field>
+            <div class="form-box">
+                <button mat-button mat-raised-button color="primary" class="buy-now-button">SAVE
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>

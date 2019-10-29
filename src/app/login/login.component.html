@@ -1,0 +1,21 @@
+<form [formGroup]="loginForm"> 
+<div class="example-container">
+  <h2 style="font-weight: 100; text-align: center;">Please sign in</h2>
+ 
+  <mat-form-field appearance="outline">
+    <mat-label>Mobile Number</mat-label>
+    <input matInput formControlName="mobileNumber" placeholder="Enter Your Mobile Number">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput formControlName="password" placeholder="Enter Password">
+  </mat-form-field>
+  <button mat-button mat-raised-button color="primary" class="buy-now-button space" (click)="login()">LOGIN
+  </button>
+
+ 
+  <label style="text-align: center; margin-top: 5px; color:gray">Or</label>
+  <button mat-button mat-stroked-button color="primary" class="button">SIGNUP NOW
+  </button>
+</div>
+</form>

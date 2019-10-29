@@ -1,0 +1,36 @@
+<div class="container">
+    <h3>Manage Cards</h3>
+    <!-- <div class="box">
+        <mat-icon style="vertical-align: middle;">add</mat-icon> &nbsp; &nbsp;
+        <span style="font-size: 14px; color: #3f51b5;">Add A New Card</span>
+    </div> -->
+    <div class="address-form">
+        <form [formGroup]="cardForm">
+
+            <div class="form-box">
+                <mat-form-field appearance="outline">
+                    <mat-label>Card Number</mat-label>
+                    <input matInput placeholder="Enter your card number">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Card validity</mat-label>
+                    <input matInput placeholder="Card validity">
+                </mat-form-field>
+            </div>
+            <div class="form-box">
+                <mat-form-field appearance="outline">
+                    <mat-label>Name on card</mat-label>
+                    <input matInput placeholder="Enter name on card">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name This Card for future use</mat-label>
+                    <input matInput placeholder="Enter name of this card for future use">
+                </mat-form-field>
+            </div>
+            <div class="form-box">
+                <button mat-button mat-raised-button color="primary" class="buy-now-button">SAVE
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

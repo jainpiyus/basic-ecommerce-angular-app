@@ -1,0 +1,55 @@
+<h3>Personal Information</h3>
+<form [formGroup]="profileForm">
+    <div class="form-box">
+        <mat-form-field appearance="outline">
+            <mat-label>first name</mat-label>
+            <input matInput formControlName="firstName" placeholder="Placeholder" value="Piyush">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="lastName">
+            <mat-label>last name</mat-label>
+            <input matInput formControlName="lastName" placeholder="Placeholder" value="Jain">
+        </mat-form-field>
+    </div>
+
+
+    <div class="form-box">
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="Placeholder" value="jain.a.piyush@gmail.com">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Number</mat-label>
+            <input matInput formControlName="mobile" placeholder="Placeholder" value="9039907701">
+        </mat-form-field>
+    </div>
+    <p>Your Gender:</p>
+    <div class="form-box">
+
+        <mat-radio-group formControlName="gender" aria-label="Select an option" color="primary">
+            <mat-radio-button selected value="1">Male</mat-radio-button> &nbsp; &nbsp;
+            <mat-radio-button value="2">Female</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="form-box" style="margin-top:20px;">
+        <button mat-button mat-raised-button color="primary" class="buy-now-button">SAVE
+        </button>
+    </div>
+</form>
+<div style="margin-top: 20px; border-top: 1px solid rgba(0, 0, 0, 0.05);">
+    <h3>FAQs</h3>
+    <p><b>What happens when I update my email address (or mobile number)?</b></p>
+    <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related
+        communication on your updated email address (or mobile number).
+    </p>
+    <p><b>When will my Flipkart account be updated with the new email address (or mobile number)?</b></p>
+    <p> It happens as soon as you confirm the verification code sent to your email (or mobile) and save the
+        changes.</p>
+
+    <p><b> What happens to my existing Flipkart account when I update my email address (or mobile number)?</b>
+    </p>
+    <p> Updating your email address (or mobile number) doesn't invalidate your account. Your account remains
+        fully functional. You'll continue seeing your Order history, saved information and personal details.</p>
+
+    <p><b>Does my Seller account get affected when I update my email address?</b></p>
+    <p> Flipkart has a 'single sign-on' policy. Any changes will reflect in your Seller account also.</p>
+</div>

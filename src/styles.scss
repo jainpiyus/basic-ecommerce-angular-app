@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+$font-primary: 'Open Sans',Arial, sans-serif;
+
+$white: #fff;
+$black: #000000;
+// $darken: #3a4348;
+
+$primary: #dbcc8f;
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+	background: $white;
+	font-size: 15px;
+	line-height: 1.8;
+	font-weight: 400;
+    color: black;
+    letter-spacing: 0.5px;
+    background: #f8f9fa;
+}
+p {
+    font-size: 12px;
+}
+span{
+    font-size: 12px;
+}
+
+.button{
+    border-radius: 0 !important;
+    border-color: #3f51b5 !important;
+	transition: all 0.3s ease 0s;
+	background: #fff;
+}
+.button:hover {
+    background-color: #3f51b5;
+    color: white;
+}
+
+mat-icon{
+    color: #3f51b5;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #3f51b5;
+}
+
+.active {
+    color: #3f51b5;
+    outline: none;
+}
+mat-card{
+    cursor: pointer !important;
+}
+mat-card:hover{
+    box-shadow: 0 0 6px rgba(0,0,0,0.5) !important;
+}
+
+.flex-box{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10%; 
+  }
+  .flex-box-transparent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    padding: 10px 10%; 
+  }
+  .free-box{
+    background: #fff;
+    padding: 10px;
+  }
+  .message-box{
+    align-items: normal;
+  }
+  .message-box:hover{
+    background: #f5faff;
+  }
+
+  mat-card {
+      border: 1px solid lavender;
+      box-shadow: none !important;
+      transition: 0.3s !important;
+      width: 250px !important;
+      margin: 10px 10px !important;
+  }
+
+  mat-card img{
+      padding-bottom: 0px !important;
+      transition: 0.3s !important;
+  }
+ 
+  mat-card img:hover{
+      border: #fff !important;
+      transform: scale(1.1);
+      z-index: 2;
+  }
+  mat-card:hover{
+      box-shadow: none !important;
+  }

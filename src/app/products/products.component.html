@@ -1,0 +1,81 @@
+<div class="products-container">
+    <div class="sidebar">
+        <div class="title">
+            Categories
+        </div>
+        <div class="list">
+            <mat-tree class="list-items" [dataSource]="dataSource" [treeControl]="treeControl">
+                <!-- This is the tree node template for leaf nodes -->
+                <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+                    <!-- use a disabled button to provide padding for tree leaf -->
+                    <button mat-icon-button disabled></button>
+                    {{node.name}}
+                </mat-tree-node>
+                <!-- This is the tree node template for expandable nodes -->
+                <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+                    <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
+                        <mat-icon class="mat-icon-rtl-mirror">
+                            {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                        </mat-icon>
+                    </button>
+                    {{node.name}}
+                </mat-tree-node>
+            </mat-tree>
+        </div>
+        <br>
+        <div class="filters">
+            Price range
+            <mat-slider style="width: 100%" color="primary" tickInterval="auto" thumbLabel min="0" max="1000" step="100"
+                value="100"></mat-slider>
+        </div>
+    </div>
+    <div class="body">
+        <mat-card class="example-card" *ngFor="let item of products" (click)="productHome(item.id)">
+            <owl-carousel [options]="carouselOptions" [items]="item.image"
+                [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                <div class="item" *ngFor="let image of item.image; let i = index">
+                    <div class="thumbnail-image">
+                        <img [src]="image" class="productImg" mat-card-image />
+                    </div>
+                </div>
+            </owl-carousel>
+            <mat-card-content>
+                <p>NIKE FREE RN 2019 ID</p>
+                <p>$120.00</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button mat-stroked-button color="primary" class="button">
+                    ADD TO CART
+                </button>
+                <button mat-button>SHARE
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+
+<div class="mobile" *ngFor="let item of products" (click)="productHome(item.id)">
+    <div class="mobile-card-container">
+        <div class="mobile-card-img">
+            <owl-carousel [options]="carouselOptions" [items]="item.image"
+                [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                <div class="item" *ngFor="let image of item.image; let i = index">
+                    <div class="thumbnail-image">
+                        <img [src]="image" class="productImg" mat-card-image />
+                    </div>
+                </div>
+            </owl-carousel>
+        </div>
+        <div class="mobile-card-details">
+            <h3>NIKE FREE RN 2019 ID</h3>
+            <p>$120.00</p>
+        </div>
+    </div>
+    <div class="mobile-card-footer">
+        <button mat-button mat-stroked-button color="primary" class="button">
+            ADD TO CART
+        </button>
+        <button mat-button>SHARE
+        </button>
+    </div>
+</div>
