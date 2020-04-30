@@ -23,7 +23,7 @@
     "@angular/router": "~8.1.2",
     "@ng-bootstrap/ng-bootstrap": "^5.1.0",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng-bootstrap": "^1.6.3",
     "ngx-owl-carousel": "^2.0.7",
     "rxjs": "~6.4.0",
