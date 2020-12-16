@@ -14,17 +14,17 @@ export class ProductService {
     {
       id: 1,
       text: "Everfresh Flowers",
-      image: ["https://ledscreensandlights.com/wp-content/uploads/2018/08/9.gif"]
+      image: ["https://image.cnbcfm.com/api/v1/image/105680013-1547583426762nike1.jpg?v=1547583682"]
     },
     {
       id: 2,
       text: "Festive Deer",
-      image: ["http://www.dkuniqueproduct.com/assets/images/3d-hologram-led-fan-500x500-2-500x500.jpg"]
+      image: ["https://sc02.alicdn.com/kf/HTB1DRCma0fvK1RjSszhq6AcGFXaZ.jpg"]
     },
     {
       id: 3,
       text: "Morning Greens",
-      image: ["http://www.getsygnal.com/uploads/products/3147701531479054.gif"]
+      image: ["https://images-na.ssl-images-amazon.com/images/I/61tBQKJJKaL._SL1500_.jpg"]
     },
     {
       id: 4,
@@ -69,7 +69,7 @@ export class ProductService {
     {
       id: 12,
       text: "Everfresh Flowers",
-      image: ["https://i.pinimg.com/236x/36/9f/4c/369f4c4013e19c9b3c671de3dc696d2b.jpg"]
+      image: ["https://images-na.ssl-images-amazon.com/images/I/61tBQKJJKaL._SL1500_.jpg"]
     },
     {
       id: 13,

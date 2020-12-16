@@ -27,20 +27,12 @@ export class SliderComponent implements OnInit {
     
     {
       text: "Festive Deer",
-      image: "https://www.tryloctite.in/themes/loctite/common/images/Offer-banner.jpg"
+      image: "https://mindstack.in/blog/wp-content/uploads/2018/01/ecommerce-banner.jpg"
     },
     {
       text: "Festive Deer",
-      image: "https://vinylbannersprinting.co.uk/wp-content/uploads/2016/04/sb25-RA-demo.png"
-    },
-    {
-      text: "Festive Deer",
-      image: "https://vinylbannersprinting.co.uk/wp-content/uploads/2016/04/sb14-RA-demo.png"
-    },
-    {
-      text: "Morning Greens",
-      image: "https://vinylbannersprinting.co.uk/wp-content/uploads/2016/04/sb05-RA-preview.png"
-    },
+      image: "https://about.zination.com/wp-content/uploads/2018/05/ecommerce-banner11.png"
+    }
   ];
  
   constructor() { }
